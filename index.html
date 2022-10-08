@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Password Generator</title>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicons/favicon-16x16.png" />
+		<link rel="manifest" href="./src/configs/site.webmanifest" />
+
+		<link rel="stylesheet" href="./src/css/core.css" />
+		<script src="./src/js/script.js" defer></script>
+	</head>
+	<body>
+		<div class="title-container">
+			<div class="title">Password Generator</div>
+			<div class="subtitle">JavaScript</div>
+		</div>
+		<div class="pw-card">
+			<div class="pw-header">
+				<div class="pw-display">
+					<button class="btn pw-btn">Copy to clipboard</button>
+				</div>
+			</div>
+			<div class="pw-opt-container">
+				<div class="form-control">
+					<label for="pw-len">Password Length</label>
+					<input id="pw-len" type="number" min="4" max="40" />
+				</div>
+				<div class="form-control">
+					<label for="uppercase">Uppercase</label>
+					<input id="uppercase" type="checkbox" />
+				</div>
+				<div class="form-control">
+					<label for="lowercase">Lowercase</label>
+					<input id="lowercase" type="checkbox" />
+				</div>
+				<div class="form-control">
+					<label for="numbers">Numbers</label>
+					<input id="numbers" type="checkbox" />
+				</div>
+				<div class="form-control">
+					<label for="symbols">Symbols</label>
+					<input id="symbols" type="checkbox" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
