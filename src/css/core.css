@@ -9,10 +9,10 @@
   Color Variables
 */
 :root {
-  --primary-color-light: #F675A8 ;
-  --second-color-light: #F29393;
-  --background-light: #FFCCB3;
-  --background-dark: #554994;
+  --primary-color-light: #FF2E63 ;
+  --secondary-color-light: #08D9D6;
+  --background-light: #EAEAEA;
+  --background-dark: #252A34;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
   font-family: Poppins;
 }
 
+/* TItle */
 .title-container {
   display: block;
 }
@@ -34,4 +35,124 @@ body {
 .subtitle {
   text-align: center;
   font-size: 15px;
+}
+
+/* Password Generator Card */
+.pw-container {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pw-card {
+  padding: 30px;
+  background-color: var(--background-dark) ;
+  filter: brightness(85%);
+  border-radius: 20px;
+  box-shadow: 0 0 4px var(--background-light);
+}
+
+.pw-header {
+  padding: 0 0 20px 0;
+}
+
+.pw-display {
+  display: inline-flex;
+  width: 300px;
+}
+
+.pw-display-container {
+  height: 40px;
+  width: 100%;
+  background: var(--primary-color-light);
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.pw-output {
+  color: var(--background-dark);
+  padding: 0 0 0 10px;
+}
+
+.pw-btn {
+  margin: 0 0 0 10px;
+  padding: 0 10px 0 10px;
+  border-radius: 10px;
+  border: none;
+  align-items: center;
+  background: var(--background-light);
+}
+
+.pw-btn:hover {
+  background: var(--secondary-color-light);
+  cursor: pointer;
+}
+
+/* Forms */
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 5px 0;
+}
+
+.pw-length {
+  border: none;
+  height: 25px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.pw-length::-webkit-outer-spin-button, 
+.pw-length::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.chkbox {
+  appearance: none;
+  border: none;
+  padding: 3px;
+  border: 1px solid var(--background-light);
+  border-radius: 10px;
+  place-content: center;
+  display: grid;
+} 
+
+.chkbox::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--secondary-color-light);
+}
+
+.chkbox:checked::before {
+  transform: scale(1);
+}
+
+.generate-pw-btn-container {
+  align-items: right;
+}
+
+.generate-pw-btn-container {
+  text-align: center;
+}
+
+.generate-pw-btn {
+  padding: 10px 0 10px 0;
+  margin: 10px 0 0 0;
+  width: 100%;
+  background: var(--background-light);
+  border: none;
+  border-radius: 10px;
+}
+
+.generate-pw-btn:hover {
+  background: var(--secondary-color-light);
+  cursor: pointer;
 }
