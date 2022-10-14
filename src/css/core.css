@@ -168,35 +168,3 @@ body {
 .btn-con {
   margin: 0 0 0 10px;
 }
-
-/* 
-.toast {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-
-  transform: translateY(100%);
-  opacity: 0;
-
-  transition:
-      opacity 500ms,
-      transform 500ms;
-}
-
-.toast.visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.toast-body {
-  margin: 28px;
-  padding: 20px 24px;
-
-  font-size: larger;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  background-color: var(--secondary-color-light);
-  color: var(--background-dark);
-
-  border-radius: 4px;
-} */
