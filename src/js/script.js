@@ -128,13 +128,14 @@ buttonCopyElement.addEventListener('click', function () {
   textArea.select()
   document.execCommand("copy")
   textArea.remove()
-  /**
-   * ? Toast
-   */
-  toastElement.querySelector(".toast-body").innerHTML = "Password copied to clibooard."
-  toastElement.classList.add("visible")
+  
+  // /**
+  //  * ? Toast
+  //  */
+  // toastElement.querySelector(".toast-body").innerHTML = "Password copied to clibooard."
+  // toastElement.classList.add("visible")
 
-  setTimeout(function () {
-    toastElement.classList.replace("visible", "")}, 3000
-  ) 
+  // setTimeout(function () {
+  //   toastElement.classList.replace("visible", "")}, 3000
+  // ) 
 })
