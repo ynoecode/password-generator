@@ -34,7 +34,8 @@ body {
 
 .subtitle {
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
+  color: var(--secondary-color-light);
 }
 
 /* Password Generator Card */
@@ -75,6 +76,9 @@ body {
 .pw-output {
   color: var(--background-dark);
   padding: 0 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .pw-btn {
@@ -104,6 +108,9 @@ body {
   height: 25px;
   width: 100px;
   border-radius: 5px;
+  outline: none;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 .pw-length::-webkit-outer-spin-button, 
@@ -111,6 +118,7 @@ body {
   -webkit-appearance: none;
 }
 
+/* Turning Checkbox into a Radio Button */
 .chkbox {
   appearance: none;
   border: none;
@@ -136,10 +144,6 @@ body {
 }
 
 .generate-pw-btn-container {
-  align-items: right;
-}
-
-.generate-pw-btn-container {
   text-align: center;
 }
 
@@ -150,9 +154,49 @@ body {
   background: var(--background-light);
   border: none;
   border-radius: 10px;
+  font-size: 15px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 .generate-pw-btn:hover {
   background: var(--secondary-color-light);
   cursor: pointer;
+}
+
+.btn-con {
+  margin: 0 0 0 10px;
+}
+
+
+.toast {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  transform: translateY(100%);
+  opacity: 0;
+
+  transition:
+      opacity 500ms,
+      transform 500ms;
+}
+
+.toast.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast-body {
+  margin: 28px;
+  padding: 20px 24px;
+
+  font-size: larger;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: var(--secondary-color-light);
+  color: var(--background-dark);
+
+  border-radius: 4px;
 }

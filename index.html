@@ -18,16 +18,16 @@
 	<body>
 		<div class="title-container">
 			<div class="title">Password Generator</div>
-			<div class="subtitle">JavaScript</div>
+			<div class="subtitle">Powered by JavaScript</div>
 		</div>
 		<div class="pw-container">
 			<div class="pw-card">
 				<div class="pw-header">
 					<div class="pw-display">
 						<div class="pw-display-container">
-							<p class="pw-output">123123</p>
+							<p class="pw-output" id="pw-output"></p>
 						</div>
-						<button class="btn pw-btn">
+						<button class="btn pw-btn" id="btn-copy">
 							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
 								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
 								<path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
@@ -39,15 +39,15 @@
 				<div class="pw-opt-container">
 					<div class="form-control">
 						<label for="pw-len">Password Length</label>
-						<input class="pw-length" id="pw-len" type="number" min="4" max="40" />
+						<input class="pw-length" id="pw-len" type="number" min="4" max="40" value="15" />
 					</div>
 					<div class="form-control">
 						<label for="uppercase">Contains Uppercase Letters</label>
-						<input class="chkbox" id="uppercase" type="checkbox" />
+						<input class="chkbox" id="uppercase" type="checkbox" checked />
 					</div>
 					<div class="form-control">
 						<label for="lowercase">Contains Lowercase Letters</label>
-						<input class="chkbox" id="lowercase" type="checkbox" />
+						<input class="chkbox" id="lowercase" type="checkbox" checked />
 					</div>
 					<div class="form-control">
 						<label for="numbers">Contains Numbers</label>
@@ -62,6 +62,10 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<div class="toast" id="toast">
+			<div class="toast-body" id="toast-body"></div>
 		</div>
 	</body>
 </html>
