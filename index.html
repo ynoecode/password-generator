@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Password Generator</title>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicons/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicons/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicons/favicon-16x16.png" />
+		<link rel="manifest" href="./src/configs/site.webmanifest" />
+
+		<link rel="stylesheet" href="./src/css/core.css" />
+		<script src="./src/js/script.js" defer></script>
+	</head>
+	<body>
+		<div class="title-container">
+			<div class="title">Password Generator</div>
+			<div class="subtitle">JavaScript</div>
+		</div>
+		<div class="pw-container">
+			<div class="pw-card">
+				<div class="pw-header">
+					<div class="pw-display">
+						<div class="pw-display-container">
+							<p class="pw-output">123123</p>
+						</div>
+						<button class="btn pw-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+								<rect x="9" y="3" width="6" height="4" rx="2" />
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="pw-opt-container">
+					<div class="form-control">
+						<label for="pw-len">Password Length</label>
+						<input class="pw-length" id="pw-len" type="number" min="4" max="40" />
+					</div>
+					<div class="form-control">
+						<label for="uppercase">Contains Uppercase Letters</label>
+						<input class="chkbox" id="uppercase" type="checkbox" />
+					</div>
+					<div class="form-control">
+						<label for="lowercase">Contains Lowercase Letters</label>
+						<input class="chkbox" id="lowercase" type="checkbox" />
+					</div>
+					<div class="form-control">
+						<label for="numbers">Contains Numbers</label>
+						<input class="chkbox" id="numbers" type="checkbox" />
+					</div>
+					<div class="form-control">
+						<label for="symbols">Contains Symbols</label>
+						<input class="chkbox" id="symbols" type="checkbox" />
+					</div>
+					<div class="generate-pw-btn-container">
+						<button class="generate-pw-btn" id="generate-pw">Generate</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
