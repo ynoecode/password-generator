@@ -50,7 +50,7 @@
 </div>
 
 <div align="center">
-  <a href="https://ynoecode.github.io/basic-calculator-app/">
+  <a href="https://ynoecode.github.io/password-generator/">
     <img src="https://i.imgur.com/akbwkjW.png" alt="Web Preview"/>
   </a>
 </div>
