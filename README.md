@@ -1,4 +1,4 @@
-<!-- Welcoming Section  -->
+
 <div align="center">
   <img src="https://i.imgur.com/4QikNqe.png" alt="App Name"/>
 </div>
